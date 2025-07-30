@@ -7,13 +7,13 @@ h1, h2 {
 }
   
 p {
-    line-height: 1.6;
-    font-size: 18px;
     margin-bottom: 20px;
 }
 
 body {
     margin: 0;
+    line-height: 1.6;
+    font-size: 18px;
     font-family: Arial, sans-serif;
     background-color: #eeeee0;
 }
@@ -163,7 +163,7 @@ section:nth-of-type(odd) .content {
 }
 
 .blend-strip-3 {
-    background: linear-gradient(to bottom, #141F41, #eeeee0);
+    background: linear-gradient(to bottom, #B9BAE4, #eeeee0);
 }
 
 #topBtn {
@@ -179,4 +179,12 @@ section:nth-of-type(odd) .content {
     bottom: 40px;
     right: 40px;
     display: none;
+}
+
+.textdiv1 {
+    margin-left: 16px;
+}
+
+.textdiv2 {
+    margin-left: 32px;
 }
