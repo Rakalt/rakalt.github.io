@@ -15,15 +15,20 @@ body {
     line-height: 1.6;
     font-size: 18px;
     font-family: Arial, sans-serif;
-    background-color: #eeeee0;
+    color: #1F3F99;
 }
 
 nav {
-    background-color: #333;
-    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
     position: sticky;
     top: 0;
+    background-color: white;
     z-index: 1000;
+    border-bottom-style: solid;
+    border-color: #1F3F99;
+    border-width: 1px;
 }
 
 nav ul {
@@ -35,14 +40,14 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #1F3F99;
     text-decoration: none;
     padding: 0.5em 1em;
     display: block;
 }
 
 nav ul li a:hover {
-    background-color: #575757;
+    background-color: #B9BAE4;
     border-radius: 5px;
 }
 
@@ -93,7 +98,9 @@ section {
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    border-top-style: solid;
+    border-color: #1F3F99;
+    border-width: 1px;
 }
   
 section .content {
@@ -123,17 +130,6 @@ section .image img {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-  
-
-section:nth-of-type(odd) {
-    color: #141F41;
-    background: #B9BAE4;
-}
-
-section:nth-of-type(even) {
-    color: #B9BAE4;
-    background: #141F41;
-}
 
 section:nth-of-type(odd) .content {
     flex-direction: row;
@@ -144,27 +140,6 @@ section:nth-of-type(odd) .content {
     flex-direction: row-reverse;
     text-align: right;
   }
-  
-
-.blend-strip {
-    height: 60px;
-}
-
-.blend-strip-0 {
-    background: linear-gradient(to bottom, #eeeee0, #B9BAE4);
-  }
-  
-.blend-strip-1 {
-    background: linear-gradient(to bottom, #B9BAE4, #141F41);
-}
-  
-.blend-strip-2 {
-    background: linear-gradient(to bottom, #141F41, #B9BAE4);
-}
-
-.blend-strip-3 {
-    background: linear-gradient(to bottom, #B9BAE4, #eeeee0);
-}
 
 #topBtn {
     border: 1px solid #d4d2c4;
