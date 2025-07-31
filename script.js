@@ -22,3 +22,25 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
       }
     });
   });
+
+// Scroll spy
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("main section");
+  const navLinks = document.querySelectorAll("#toc a");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute("id");
+      const tocLink = document.querySelector(`#toc a[href="#${id}"]`);
+      
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove("active"));
+        tocLink?.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  sections.forEach(section => observer.observe(section));
+});
