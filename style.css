@@ -46,10 +46,6 @@ ul li a:hover {
     border-radius: 5px;
 }
 
-#toc a.active {
-    font-weight: bold;
-  }
-
 .introContent {
     display: flex;
     justify-content: center;
