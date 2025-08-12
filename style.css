@@ -129,9 +129,9 @@ ul li a:hover {
 */
 
 #topBtn {
-    border: 1px solid #d4d2c4;
+    border: 1px solid #1F3F99;
     outline: none;
-    background-color: #eeeee0;
+    background-color: white;
     color: #333;
     padding: 10px 15px;
     border-radius: 6px;
@@ -174,7 +174,6 @@ ul li a:hover {
 /* Tablet & Phone adjustments */
 @media (max-width: 768px) {
     .nav {
-        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -207,10 +206,6 @@ ul li a:hover {
     .nav ul,
     .nav li {
     list-style: none !important;
-    }
-
-    body {
-        padding-top: 250px;
     }
 
     .allSections {
