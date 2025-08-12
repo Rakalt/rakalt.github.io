@@ -77,7 +77,7 @@ ul li a:hover {
 }
 
 #minorIntro {
-    max-width: 800px;
+    max-width: 950px;
 }
 
 .middleSubSection {
@@ -94,7 +94,6 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1000px;
     width: 100%;
     gap: 40px;
     padding: 0 20px;
@@ -117,7 +116,7 @@ ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
+/*
 .middleSubSection:nth-of-type(odd) .content {
     flex-direction: row;
     text-align: left;
@@ -127,6 +126,7 @@ ul li a:hover {
     flex-direction: row-reverse;
     text-align: right;
 }
+*/
 
 #topBtn {
     border: 1px solid #d4d2c4;
@@ -165,15 +165,84 @@ ul li a:hover {
 }
 
 .middleSection {
-    width: 60%;
+    width: 80%;
     overflow-y: scroll;
     height: 100vh;
     padding: 20px;
 }
 
-.rightSection {
-    width: 20%;
-    background-color: #f7f7f7;
-    border-left: 1px solid #1F3F99;
-    position: relative;
+/* Tablet & Phone adjustments */
+@media (max-width: 768px) {
+    .allSections {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .leftSection,
+    .middleSection,
+    .rightSection {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .middleSection {
+        overflow-y: visible;
+        padding: 10px;
+    }
+
+    ul li a {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    .introContent {
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 30px;
+    }
+
+    #majorIntro {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .middleSubSection {
+        padding: 40px 10px;
+    }
+
+    .middleSubSection .content {
+        flex-direction: column !important;
+        gap: 20px;
+        text-align: center !important;
+    }
+
+    .middleSubSection .text,
+    .middleSubSection .image {
+        flex: unset;
+        width: 100%;
+    }
+
+    #topBtn {
+        padding: 8px 12px;
+        font-size: 16px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #majorIntro {
+        font-size: 18px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .nav {
+        font-size: 16px;
+    }
 }
