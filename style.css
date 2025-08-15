@@ -10,6 +10,10 @@ p {
     margin-bottom: 20px;
 }
 
+a {
+    color: #54a2a3;
+}
+
 body {
     margin: 0;
     line-height: 1.6;
@@ -102,6 +106,7 @@ ul li a:hover {
 .middleSubSection .text {
     flex: 1;
     text-align: left;
+    max-width: 50%;
 }
   
 .middleSubSection .image {
